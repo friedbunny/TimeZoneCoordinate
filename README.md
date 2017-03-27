@@ -13,3 +13,11 @@ To set the center coordinate of a map view (e.g., using the [Mapbox iOS SDK](htt
 ```
 [self.mapView setCenterCoordinate:NSTimeZone.localTimeZone.coordinate];
 ```
+
+## Installation
+
+### CocoaPods
+
+```ruby
+pod "NSTimeZone-Coordinate" :git => 'https://github.com/friedbunny/NSTimeZone-Coordinate.git', :tag => '1.0.0'
+```
