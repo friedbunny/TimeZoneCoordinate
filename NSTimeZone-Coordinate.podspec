@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NSTimeZone-Coordinate'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'NSTimeZone category that adds coordinates.'
 
   s.homepage         = 'https://github.com/friedbunny/NSTimeZone-Coordinate'
