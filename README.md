@@ -10,7 +10,8 @@ NSLog(@"%@: %f, %f", timeZone.description, coordinate.latitude, coordinate.longi
 ```
 
 To set the center coordinate of a map view (e.g., using the [Mapbox iOS SDK](https://www.mapbox.com/ios-sdk/)):
-```
+
+```objc
 [self.mapView setCenterCoordinate:NSTimeZone.localTimeZone.coordinate];
 ```
 
