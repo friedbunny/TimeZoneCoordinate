@@ -1,0 +1,18 @@
+{
+  "name": "nstimezone-coordinate",
+  "version": "1.0.0",
+  "description": "NSTimeZone category that adds coordinates.",
+  "url": "https://github.com/friedbunny/nstimezone-coordinate/",
+  "repository": "friedbunny/nstimezone-coordinate",
+  "scripts": {
+    "update": "node lib/convert.js"
+  },
+  "author": "Jason Wray",
+  "license": "MIT",
+  "dependencies": {
+    "csv": "^1.1.1",
+    "lodash": "^4.17.4",
+    "plist": "^2.0.1"
+  },
+  "private": true
+}
