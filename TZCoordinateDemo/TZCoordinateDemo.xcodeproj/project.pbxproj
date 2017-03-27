@@ -30,9 +30,9 @@
 		96A82B031E88E389000AE54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A82B061E88E389000AE54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A82B081E88E389000AE54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96A82B0E1E88E488000AE54C /* NSTimeZone+Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimeZone+Coordinate.h"; path = "../NSTimeZone+Coordinate.h"; sourceTree = "<group>"; };
-		96A82B0F1E88E488000AE54C /* NSTimeZone+Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimeZone+Coordinate.m"; path = "../NSTimeZone+Coordinate.m"; sourceTree = "<group>"; };
-		96A82B101E88E488000AE54C /* timezones.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = timezones.plist; path = ../timezones.plist; sourceTree = "<group>"; };
+		96A82B0E1E88E488000AE54C /* NSTimeZone+Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimeZone+Coordinate.h"; path = "../NSTimeZone+Coordinate/NSTimeZone+Coordinate.h"; sourceTree = "<group>"; };
+		96A82B0F1E88E488000AE54C /* NSTimeZone+Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimeZone+Coordinate.m"; path = "../NSTimeZone+Coordinate/NSTimeZone+Coordinate.m"; sourceTree = "<group>"; };
+		96A82B101E88E488000AE54C /* timezones.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = timezones.plist; path = "../NSTimeZone+Coordinate/timezones.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
