@@ -10,6 +10,7 @@
 
 @interface NSTimeZone (Coordinate)
 
+/** Coordinate for the largest populated place within the given time zone. */
 @property (readonly) CLLocationCoordinate2D coordinate;
 
 @end
