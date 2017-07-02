@@ -7,6 +7,12 @@
 
 #import "NSTimeZone+Coordinate.h"
 
+@interface NSTimeZoneCoordinateBundleCanary : NSObject
+@end
+
+@implementation NSTimeZoneCoordinateBundleCanary
+@end
+
 @implementation NSTimeZone (Coordinate)
 
 - (CLLocationCoordinate2D)coordinate {
@@ -23,7 +29,7 @@
 }
 
 - (NSDictionary *)timeZonesDictionary {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"timezones" ofType:@"plist"];
+    NSString *path = [[NSBundle bundleForClass:NSTimeZoneCoordinateBundleCanary.class] pathForResource:@"timezones" ofType:@"plist"];
     return [NSDictionary dictionaryWithContentsOfFile:path];
 }
 
