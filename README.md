@@ -9,15 +9,20 @@ These coordinates are derived from the [IANA’s Time Zone database](https://www
 ```objc
 CLLocationCoordinate2D coordinate = NSTimeZone.localTimeZone.coordinate;
 
-NSLog(@"%@: %f, %f", NSTimeZone.localTimeZone.description, coordinate.latitude, coordinate.longitude);
+NSLog(@"%@: %f, %f", NSTimeZone.localTimeZone, coordinate.latitude, coordinate.longitude);
 // → Local Time Zone (America/New_York (EDT) offset -14400 (Daylight)): 40.714000, -74.006000
 ```
 
 To set the center coordinate of a map view (e.g., using the [Mapbox iOS SDK](https://www.mapbox.com/ios-sdk/)):
 
 ```objc
-[self.mapView setCenterCoordinate:NSTimeZone.localTimeZone.coordinate];
+CLLocationCoordinate2D coordinate = NSTimeZone.localTimeZone.coordinate;
+if (CLLocationCoordinate2DIsValid(coordinate)) {
+    [self.mapView setCenterCoordinate:coordinate];
+}
 ```
+
+Be sure to check that the returned coordinate is valid, as it is possible that this category may not find a coordinate for a given time zone.
 
 See the [demo project](./TZCoordinateDemo) for more information about usage and available time zones.
 

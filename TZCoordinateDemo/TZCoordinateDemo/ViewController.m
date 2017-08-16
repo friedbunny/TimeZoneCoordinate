@@ -22,10 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSTimeZone *tz = NSTimeZone.localTimeZone;
-    NSLog(@"%@: %f, %f", tz.description, tz.coordinate.latitude, tz.coordinate.longitude);
+    CLLocationCoordinate2D tzCoordinate = NSTimeZone.localTimeZone.coordinate;
+    if (CLLocationCoordinate2DIsValid(tzCoordinate)) {
+        [self.mapView setCenterCoordinate:tzCoordinate animated:YES];
+    }
 
-    [self.mapView setCenterCoordinate:NSTimeZone.localTimeZone.coordinate animated:YES];
+    NSLog(@"%@: %f, %f", NSTimeZone.localTimeZone, tzCoordinate.latitude, tzCoordinate.longitude);
+
     [self addPinsForAvailableTimeZones];
 }
 
