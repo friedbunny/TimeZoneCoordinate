@@ -5,7 +5,7 @@
   "url": "https://github.com/friedbunny/nstimezone-coordinate/",
   "repository": "friedbunny/nstimezone-coordinate",
   "scripts": {
-    "update": "node lib/convert.js"
+    "update": "git submodule update --remote && node lib/convert.js"
   },
   "author": "Jason Wray",
   "license": "MIT",

@@ -44,6 +44,5 @@ pod 'NSTimeZone-Coordinate'
 
 ## Updating
 
-1. Update the `tz` submodule: `git submodule foreach git pull origin master`.
-2. Regenerate the plists: `npm run update`.
-3. Commit the new submodule commit hash and the changes to the binary and XML plist files.
+1. `npm run update` — updates the timezone submodule and regenerates the plists.
+2. Commit the new submodule commit hash and the changes to the binary and XML plist files.
