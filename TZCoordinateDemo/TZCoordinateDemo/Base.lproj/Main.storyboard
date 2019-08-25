@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,7 +30,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MUA-Vm-fYf" secondAttribute="trailing" id="0B6-gk-LMQ"/>
                             <constraint firstItem="MUA-Vm-fYf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5xQ-cV-69O"/>
-                            <constraint firstItem="MUA-Vm-fYf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Bd1-lJ-Lfl"/>
+                            <constraint firstItem="MUA-Vm-fYf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Bd1-lJ-Lfl"/>
                             <constraint firstItem="MUA-Vm-fYf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MBN-e2-SZZ"/>
                         </constraints>
                     </view>

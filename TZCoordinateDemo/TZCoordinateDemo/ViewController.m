@@ -3,7 +3,7 @@
 //  TZCoordinateDemo
 //
 //  Created by Jason Wray on 3/27/17.
-//  Copyright © 2017 Mapbox. All rights reserved.
+//  Copyright © 2019 Jason Wray. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -30,6 +30,10 @@
     NSLog(@"%@: %f, %f", NSTimeZone.localTimeZone, tzCoordinate.latitude, tzCoordinate.longitude);
 
     [self addPinsForAvailableTimeZones];
+
+    if (@available(iOS 11.0, *)) {
+        self.mapView.mapType = MKMapTypeMutedStandard;
+    }
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
@@ -37,7 +41,7 @@
     pin.canShowCallout = YES;
 
     if ([annotation.title isEqualToString:NSTimeZone.localTimeZone.name]) {
-        pin.pinColor = MKPinAnnotationColorGreen;
+        pin.pinTintColor = UIColor.systemGreenColor;
     }
 
     return pin;
@@ -51,7 +55,7 @@
         MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
         pin.coordinate = tz.coordinate;
         pin.title = tz.name;
-        pin.subtitle = [NSString stringWithFormat:@"%f, %f", tz.coordinate.latitude, tz.coordinate.longitude];
+        pin.subtitle = [NSString stringWithFormat:@"%.3f, %.3f", tz.coordinate.latitude, tz.coordinate.longitude];
 
         [annotations addObject:pin];
     }

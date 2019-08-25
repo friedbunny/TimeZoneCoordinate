@@ -2,7 +2,7 @@
 //  NSTimeZone+Coordinate.h
 //
 //  Created by Jason Wray on 2/14/17.
-//  Copyright © 2017 Mapbox. All rights reserved.
+//  Copyright © 2019 Jason Wray. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
