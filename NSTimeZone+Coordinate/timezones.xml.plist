@@ -892,6 +892,11 @@
       <real>44.8</real>
       <real>65.467</real>
     </array>
+    <key>Asia/Qostanay</key>
+    <array>
+      <real>53.2</real>
+      <real>63.617</real>
+    </array>
     <key>Asia/Aqtobe</key>
     <array>
       <real>50.283</real>
@@ -994,8 +999,8 @@
     </array>
     <key>Asia/Macau</key>
     <array>
-      <real>22.233</real>
-      <real>113.583</real>
+      <real>22.197</real>
+      <real>113.542</real>
     </array>
     <key>America/Martinique</key>
     <array>
@@ -1282,11 +1287,6 @@
       <real>44.95</real>
       <real>34.1</real>
     </array>
-    <key>Europe/Volgograd</key>
-    <array>
-      <real>48.733</real>
-      <real>44.417</real>
-    </array>
     <key>Europe/Kirov</key>
     <array>
       <real>58.6</real>
@@ -1296,6 +1296,11 @@
     <array>
       <real>46.35</real>
       <real>48.05</real>
+    </array>
+    <key>Europe/Volgograd</key>
+    <array>
+      <real>48.733</real>
+      <real>44.417</real>
     </array>
     <key>Europe/Saratov</key>
     <array>
@@ -1436,6 +1441,16 @@
     <array>
       <real>5.833</real>
       <real>-55.167</real>
+    </array>
+    <key>Africa/Juba</key>
+    <array>
+      <real>4.85</real>
+      <real>31.617</real>
+    </array>
+    <key>Africa/Sao_Tome</key>
+    <array>
+      <real>0.333</real>
+      <real>6.733</real>
     </array>
     <key>America/El_Salvador</key>
     <array>
@@ -1684,8 +1699,8 @@
     </array>
     <key>America/Montevideo</key>
     <array>
-      <real>-34.883</real>
-      <real>-56.183</real>
+      <real>-34.909</real>
+      <real>-56.213</real>
     </array>
     <key>Asia/Samarkand</key>
     <array>
