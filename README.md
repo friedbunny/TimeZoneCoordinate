@@ -4,6 +4,8 @@ Adds a `coordinate` property to `NSTimeZone` — useful in situations where loc
 
 These coordinates are derived from the [IANA’s Time Zone database](https://www.iana.org/time-zones) and represent the largest populated place within a given time zone (_not_ the centroid).
 
+![Example map showing pins at timezone coordinates](example.png)
+
 ## Usage
 
 ```objc
