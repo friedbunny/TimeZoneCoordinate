@@ -8,8 +8,21 @@
 
 import CoreLocation
 
+@objc protocol Coordinates {
+    var coordinate: CLLocationCoordinate2D { get }
+}
+
 extension TimeZone {
     public var coordinate: CLLocationCoordinate2D? {
-        return TimeZoneCoordinates[self.identifier].map { CLLocationCoordinate2D(latitude: $0, longitude: $1) }
+        let tz = self as NSTimeZone
+        let coord = tz.coordinate
+        return CLLocationCoordinate2DIsValid(coord) ? coord : nil
+    }
+}
+
+@objc
+extension NSTimeZone: Coordinates {
+    public var coordinate: CLLocationCoordinate2D {
+        return TimeZoneCoordinates[self.name].map { CLLocationCoordinate2D(latitude: $0, longitude: $1) } ?? kCLLocationCoordinate2DInvalid
     }
 }
