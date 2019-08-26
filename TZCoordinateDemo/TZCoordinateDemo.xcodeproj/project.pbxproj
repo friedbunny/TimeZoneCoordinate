@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		961E49831E88E6ED001732C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		9693800D231327F30099F6C4 /* TimeZoneCoordinate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TimeZoneCoordinate; path = ../TimeZoneCoordinate; sourceTree = "<group>"; };
+		9693800D231327F30099F6C4 /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
 		9693801423132A070099F6C4 /* TimeZone Coordinate Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeZone Coordinate Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9693801623132A070099F6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9693801823132A070099F6C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		96A82AEB1E88E388000AE54C = {
 			isa = PBXGroup;
 			children = (
-				9693800D231327F30099F6C4 /* TimeZoneCoordinate */,
+				9693800D231327F30099F6C4 /* .. */,
 				96A82AF61E88E388000AE54C /* Objective-C Demo */,
 				9693801523132A070099F6C4 /* Timezone Coordinate Demo */,
 				96A82AF51E88E388000AE54C /* Products */,
@@ -473,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TZCoordinateDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Objective-C Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TZCoordinateDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Objective-C Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
