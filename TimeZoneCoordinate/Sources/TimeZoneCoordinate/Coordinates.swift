@@ -9,7 +9,7 @@
 import CoreLocation
 
 /// TODO: Measure performance, investigate lazy loading, and potentially a different data structure
-public let TimeZoneCoordinates: [String: (CLLocationDegrees, CLLocationDegrees)] = [
+public let TimeZoneCoordinates: [String: (latitude: CLLocationDegrees, longitude: CLLocationDegrees)] = [
     "Europe/Andorra": (42.5, 1.517),
     "Asia/Dubai": (25.3, 55.3),
     "Asia/Kabul": (34.517, 69.2),
