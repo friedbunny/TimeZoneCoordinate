@@ -1,6 +1,6 @@
-# NSTimeZone+Coordinate
+# TimeZoneCoordinate
 
-Adds a `coordinate` property to `NSTimeZone` — useful in situations where location permission has not yet been granted, has been refused, or can’t be requested.
+Adds a `coordinate` property to `TimeZone` — useful in situations where location permission has not yet been granted, has been refused, or can’t be requested.
 
 These coordinates are derived from the [IANA’s Time Zone database](https://www.iana.org/time-zones) and represent the largest populated place within a given time zone (_not_ the centroid).
 
@@ -15,7 +15,7 @@ NSLog(@"%@: %f, %f", NSTimeZone.localTimeZone, coordinate.latitude, coordinate.l
 // → Local Time Zone (America/New_York (EDT) offset -14400 (Daylight)): 40.714000, -74.006000
 ```
 
-To set the center coordinate of a map view (e.g., using the [Mapbox iOS SDK](https://www.mapbox.com/ios-sdk/)):
+To set the center coordinate of a map view (e.g., using the [Mapbox Maps SDK](https://www.mapbox.com/ios-sdk/)):
 
 ```objc
 CLLocationCoordinate2D coordinate = NSTimeZone.localTimeZone.coordinate;
