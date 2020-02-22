@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 
-#import "NSTimeZone+Coordinate.h"
-#import <MapKit/MapKit.h>
+//#import "NSTimeZone+Coordinate.h"
+@import TimeZoneCoordinate;
+@import MapKit;
 
 @interface ViewController () <MKMapViewDelegate>
 
