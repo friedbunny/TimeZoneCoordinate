@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "csv": "^1.1.1",
-    "plist": "^2.0.1"
+    "plist": "^3.0.4"
   },
   "private": true
 }
