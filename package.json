@@ -10,7 +10,7 @@
   "author": "Jason Wray",
   "license": "MIT",
   "dependencies": {
-    "csv": "^1.1.1",
+    "csv": "^6.2.10",
     "plist": "^2.0.1"
   },
   "private": true
